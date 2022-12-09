@@ -1,0 +1,318 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: #BBBBBB;
+	padding: 20px 0;
+}
+.caixa{
+    position: relative;
+	
+}
+p:first-line{
+    font-style: italic;
+}
+
+/*CSS da página do index*/
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.banner{
+    width: 100%;
+}
+
+.titlemain{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    /*para limpar a sombra da imagem do float usamos o clear e acrescentamos a direção que se quer limpar*/
+    clear: left;
+}
+
+.titlemain::first-letter{
+    font-weight: bold;
+}
+
+.utensilios{
+    width: 120px;
+    /*colocar o elemento para flutuar na direção que se queira na página*/
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+#missao{
+    font-size: 20px;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+    
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+em strong{
+    color: rgb(167, 73, 133);
+}
+
+.beneficios{
+    background: #888888;
+    padding: 3em 0;
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5;
+}
+
+.itens:before{
+    content: "★";
+}
+.imagem-beneficios {
+	width: 60%;
+    transition: 400ms;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
+
+}
+
+.imagem-beneficios:hover{
+    opacity: 0.7;
+
+}
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+    opacity: 0.7;
+}
+
+.video:hover{
+    transition: 400ms;
+    opacity: 1;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline ;
+    margin: 0 0 0 15px;
+    
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #79186f;
+    text-decoration: underline;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    box-sizing: border-box;
+    border: 2px  #000000 solid;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    color: #C78C19;
+    
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+    
+}
+
+.produtos li:active{
+    border-color: #088C19;
+    
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+    padding: 30px 20px;
+}
+
+.preco-produto{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+form{
+    margin: 40px 15px ;
+    color: #1B2631;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.text-paragraph{
+    color: #1B2631;
+    font-weight: bold;
+}
+
+.input-padrao{
+    display: block;
+    margin:0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    color: white;
+    font-weight: bold;
+    background: orange;
+    font-size: 20px ;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(220, 88, 31);
+    transform: rotate(65deg) scale(1.1); /* scale usado para definir um aumento do campo quando o usuário passar o mouse */
+}
+
+table{
+    margin:20px 0 40px;   
+    
+}
+
+thead, h2{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+thead{
+    background: #555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px ;
+}
+
+
+footer{
+    text-align: center;
+    background: url("imagem_produtos/bg.jpg");
+    padding: 40px 0;
+    
+}
+
+footer p{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+    .principal{
+        text-align:center;
+        width: auto;
+    }
+    .mapa{
+        width: 100vh;
+   }
+   .titlemain{
+    text-align: justify;
+   }
+   .mapa p{
+    text-align: center;
+    width: 40%;
+   }
+  
+} 

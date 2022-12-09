@@ -1,0 +1,41 @@
+body{
+    font-family: sans-serif;
+}
+
+.principal{
+    text-align: center;
+    background: #CCCCCC;
+    padding: 30px;
+}
+
+.title-main{
+    padding-left: 20px;
+}
+
+#banner{
+     width: 100%;
+}
+#missao{
+    font-size: 20px;
+}
+
+.titlecenter{
+    text-align: center;
+}
+
+em strong{
+    color: rgb(167, 73, 133);
+}
+
+.beneficios{
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+    
+}
